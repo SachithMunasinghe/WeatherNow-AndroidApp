@@ -1,0 +1,73 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    cardview:cardCornerRadius="10dp"
+    cardview:cardElevation="4dp"
+    cardview:cardPreventCornerOverlap="true"
+    cardview:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="3">
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/pic_01d"
+                tools:ignore="ContentDescription">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="5">
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="8dp"
+                android:text="Text View"
+                android:textSize="19dp"
+                tools:ignore="HardcodedText,RtlHardcoded">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="4">
+            <TextView
+                android:id="@+id/txt_temp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="10dp"
+                android:text="32 C"
+                android:textSize="27dp"
+                tools:ignore="HardcodedText,RtlHardcoded">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
