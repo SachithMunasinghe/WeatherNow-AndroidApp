@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
             Log.d(TAG, "Fetching data for location: " + location + " and unit: " + unit);
             try {
-                final String BASE_URL = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&cnt=20&appid=ded3986c6d5f984443ebef874d8701e8&units=" + unit;
+                final String BASE_URL = "https://api.openweathermap.org/data/2.5/forecast?q=" + location + "&cnt=20&appid=&units=" + unit;
                 URL url = new URL(BASE_URL);
 
                 urlConnection = (HttpURLConnection) url.openConnection();
