@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:613856227925:android:e2d12e775ed733be719adc",
+        "mobilesdk_app_id": "c",
         "android_client_info": {
           "package_name": "com.example.weather"
         }
